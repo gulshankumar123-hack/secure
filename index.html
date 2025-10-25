@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Engineering Tools | Precision Manufacturing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            position: relative;
+            background-image: url(images/bg.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .section-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+            color: #1f2937;
+        }
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: #4b5563;
+            text-align: center;
+            max-width: 48rem;
+            margin: 0 auto 3rem auto;
+        }
+        .card {
+            background: white;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+        }
+        .btn-primary {
+            background: #f97316;
+            color: white;
+        }
+        .btn-secondary {
+            background: #374151;
+            color: white;
+        }
+        .icon-box {
+            width: 4rem;
+            height: 4rem;
+            background: #fef3c7;
+            color: #f97316;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <header class="bg-white border-b sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center text-2xl font-bold text-gray-800">
+                <img src="images/logo.png" alt="Star Engineering Tools Logo" class="h-10 mr-3">
+                <span>Star Engineering Tools</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600">About Us</a>
+                <a href="#products" class="text-gray-600">Products</a>
+                <a href="#quality" class="text-gray-600">Quality</a>
+                <a href="#industries" class="text-gray-600">Industries</a>
+                <a href="#contact" class="text-gray-600">Contact</a>
+            </div>
+            <button class="md:hidden" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl text-gray-800"></i>
+            </button>
+        </nav>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <a href="#about" class="block py-2 px-4 text-sm">About Us</a>
+            <a href="#products" class="block py-2 px-4 text-sm">Products</a>
+            <a href="#quality" class="block py-2 px-4 text-sm">Quality</a>
+            <a href="#industries" class="block py-2 px-4 text-sm">Industries</a>
+            <a href="#contact" class="block py-2 px-4 text-sm">Contact</a>
+        </div>
+    </header>
+
+    <section class="hero-bg text-white relative">
+        <div class="container mx-auto px-6 py-32 md:py-48 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Broach Tools</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Delivering superior cutting solutions with unmatched accuracy and durability for over 30 years.</p>
+            <div class="space-x-4">
+                <a href="#products" class="btn btn-primary">Our Products</a>
+                <a href="#contact" class="btn btn-secondary">Get a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="images/industry-bg.jpg" alt="Our Factory" class="rounded-lg w-full border">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Broach Manufacturing</h2>
+                    <p class="text-gray-600 mb-4">
+                        Welcome to Star Engineering Tools, your premier destination for high-quality tooling solutions specializing in tools, dies, and broaches. With a steadfast commitment to precision engineering and innovation, we pride ourselves on delivering top-tier products tailored to meet the diverse needs of our clients across various industries.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Our commitment is to our clients' success. We work closely with you to understand your unique requirements and deliver custom solutions that enhance productivity and ensure precision.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-20 bg-gray-100 fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Our Product Range</h2>
+            <p class="section-subtitle">We manufacture a wide variety of broaches for internal and external surface cutting, tailored to your specific application.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card">
+                    <img src="images/Keyway.jpg" alt="Keyway Broach" class="w-fit h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Keyway Broaches</h3>
+                        <p class="text-gray-600 text-sm">High-precision keyway broaches for creating slots in bores. Available in standard and custom sizes.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/spline.jpg" alt="Spline Broach" class="w-fit h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Spline Broaches</h3>
+                        <p class="text-gray-600 text-sm">Involute, straight, and serration spline broaches designed for maximum tool life and performance.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/surface.jpg" alt="Surface Broach" class="w-fit h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Surface Broaches</h3>
+                        <p class="text-gray-600 text-sm">Custom-engineered surface broaches for external flat or contoured surfaces with superior finish.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/round.jpg" alt="Round Broach" class="w-fit h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Round Broaches</h3>
+                        <p class="text-gray-600 text-sm">For creating or finishing round holes with exceptional accuracy and straightness.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/invloute.png" alt="Keyway Broach" class="w-fill h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Involute Broach</h3>
+                        <p class="text-gray-600 text-sm">High-precision keyway broaches for creating slots in bores. Available in standard and custom sizes.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/drift.jpg" alt="Spline Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Drift Tools</h3>
+                        <p class="text-gray-600 text-sm">Involute, straight, and serration spline broaches designed for maximum tool life and performance.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/hexanaol.jpg" alt="Surface Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Hexanoal Broaches</h3>
+                        <p class="text-gray-600 text-sm">Custom-engineered surface broaches for external flat or contoured surfaces with superior finish.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/square.jpg" alt="Round Broach" class="w-fit h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Square Broaches</h3>
+                        <p class="text-gray-600 text-sm">For creating or finishing round holes with exceptional accuracy and straightness.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/full yoke.jpg" alt="Spline Broach" class="w-fit h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Full Yoke</h3>
+                        <p class="text-gray-600 text-sm">THRESHER YOKE</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/plain yoke.jpg" alt="Surface Broach" class="w-fit h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Plain Yoke</h3>
+                        <p class="text-gray-600 text-sm">THRESHER YOKE.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/1 inch.jpg" alt="Round Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">1" Yoke</h3>
+                        <p class="text-gray-600 text-sm">THRESHER YOKE.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/3 inch.jpg" alt="Keyway Broach" class="w-fit h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">3" Yoke</h3>
+                        <p class="text-gray-600 text-sm">THRESHER YOKE</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/crossj.jpg" alt="Spline Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Cross Holder</h3>
+                        <p class="text-gray-600 text-sm">THRESHER YOKE</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/6t.jpg" alt="Surface Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">6 Teeth Yoke</h3>
+                        <p class="text-gray-600 text-sm">THRESHER YOKE.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/10t.jpg" alt="Round Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">10 Teeth Yoke</h3>
+                        <p class="text-gray-600 text-sm">THRESHER YOKE</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/21t.jpg" alt="Keyway Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">21 Teeth Yoke</h3>
+                        <p class="text-gray-600 text-sm">THRESHER YOKE</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/allu.jpg" alt="Spline Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Allu Plain Yoke</h3>
+                        <p class="text-gray-600 text-sm">THRESHER YOKE</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/pin.jpg" alt="Surface Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Allu Pin Yoke</h3>
+                        <p class="text-gray-600 text-sm">THRESHER YOKE</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/joint allu.jpg" alt="Round Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Allu Joint Set</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFT TYPE</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/Outer Lock W Shearing Yoke.jpg" alt="Keyway Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Outer Lock W/Shearing Yoke</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFT TYPE</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/P.T.O. Shaft Half Rotavator Side.jpg" alt="Spline Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">P.T.O. Shaft Half Rotavator Side</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFT TYPE</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/Inner Lock Trator Side.jpg" alt="Surface Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Inner Lock/ Trator Side</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFT TYPE</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/Inner Lock W Shearing Yoke.jpg" alt="Round Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Inner Lock W/ Shearing Yoke</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFT TYPE</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/S YOKE 6T.jpg" alt="Keyway Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Yoke 6T</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS OUTER LOCK SHAKTIMAN</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/S YOKE 12T.jpg" alt="Spline Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Yoke 21T</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS OUTER LOCK SHAKTIMAN</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/small bore.jpg" alt="Surface Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Yoke Small Bore</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS OUTER LOCK SHAKTIMAN</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/big bore.jpg" alt="Round Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Yoke Big Bore</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS OUTER LOCK SHAKTIMAN</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/shearing yoke.jpg" alt="Keyway Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Yoke Shearing</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS OUTER LOCK SHAKTIMAN</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/yoke 1OT.jpg" alt="Spline Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Yoke 1OT</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS OUTER LOCK SHAKTIMAN</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/Outer Lock.jpg" alt="Surface Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Outer Lock / Tractor Side</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS OUTER LOCK SHAKTIMAN</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/pto.jpg" alt="Round Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">P.T.O. Shaft Half W/ Shearing Yoke</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS OUTER LOCK SHAKTIMAN</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/half.jpg" alt="Keyway Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Yoke Half Shearing Cross Side</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS OUTER LOCK SHAKTIMAN</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/machine.jpg" alt="Keyway Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Yoke Half Shearing Machine Side</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS OUTER LOCK SHAKTIMAN</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/S YOKE 6T.jpg" alt="Keyway Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Yoke 6T</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS INNER LOCK SONALIKA</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/S YOKE 12T.jpg" alt="Spline Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Yoke 21T</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS INNER LOCK SONALIKA</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/small bore.jpg" alt="Surface Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Yoke Small Bore</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS INNER LOCK SONALIKA</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/big bore.jpg" alt="Round Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Yoke Big Bore</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS INNER LOCK SONALIKA</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/shearing yoke.jpg" alt="Keyway Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Yoke Shearing</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS INNER LOCK SONALIKA</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/yoke 1OT.jpg" alt="Spline Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Yoke 1OT</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS INNER LOCK SONALIKA</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/Outer Lock.jpg" alt="Surface Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Outer Lock / Tractor Side</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS INNER LOCK SONALIKA</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/pto.jpg" alt="Round Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">P.T.O. Shaft Half W/ Shearing Yoke</h3>
+                        <p class="text-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS INNER LOCK SONALIKA</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/half.jpg" alt="Keyway Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Yoke Half Shearing Cross Side</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS INNER LOCK SONALIKA</p>
+                    </div>
+                </div>
+               <div class="card">
+                    <img src="images/machine.jpg" alt="Keyway Broach" class="w-full h-50 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Yoke Half Shearing Machine Side</h3>
+                        <p class="text-gray-600 text-sm">P.T.O. SHAFTS & YOKE 38MM CROSS INNER LOCK SONALIKA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quality" class="py-20 fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Commitment to Quality</h2>
+            <p class="section-subtitle">Our ISO 9001 : 2015 certified processes ensure every tool we produce meets the highest standards of quality and performance.</p>
+                            <p class="section-subtitle">MSME ZED Certified</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div class="flex flex-col items-center">
+                    <div class="icon-box">
+                        <i class="fas fa-microscope text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Advanced Materials</h3>
+                    <p class="text-gray-600">We use premium high-speed steels (HSS) and apply specialized coatings (TiN, TiCN) for enhanced durability and wear resistance.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="icon-box">
+                        <i class="fas fa-cogs text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">CNC Machining</h3>
+                    <p class="text-gray-600">Our state-of-the-art CNC grinding and milling machines allow for sub-micron precision and complex tool geometries.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="icon-box">
+                        <i class="fas fa-check-circle text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Rigorous Inspection</h3>
+                    <p class="text-gray-600">Every broach undergoes a multi-stage inspection process using advanced metrology equipment to guarantee flawless quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="industries" class="py-20 bg-gray-800 text-white fade-in-section">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-white">Serving Diverse Industries</h2>
+            <p class="section-subtitle text-gray-300">Our broaching solutions are trusted by leading companies in a variety of demanding sectors.</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+                <div class="text-center p-4">
+                    <i class="fas fa-car text-5xl text-orange-400 mb-2"></i>
+                    <p>Automotive</p>
+                </div>
+                <div class="text-center p-4">
+                    <i class="fas fa-plane text-5xl text-orange-400 mb-2"></i>
+                    <p>Aerospace</p>
+                </div>
+                <div class="text-center p-4">
+                    <i class="fas fa-industry text-5xl text-orange-400 mb-2"></i>
+                    <p>Heavy Machinery</p>
+                </div>
+                <div class="text-center p-4">
+                    <i class="fas fa-bolt text-5xl text-orange-400 mb-2"></i>
+                    <p>Energy</p>
+                </div>
+                 <div class="text-center p-4">
+                    <i class="fas fa-tractor text-5xl text-orange-400 mb-2"></i>
+                    <p>Agriculture</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="industries" class="py-20 bg-gray-800 text-white">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <div class="bg-gray-900 p-6 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Manager</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i>+91 98145-73978</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2"></i>starbroach98@gmail.com</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Sales team</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i>+91 98145-73978</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2"></i>starbroach98@gmail.com</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Purchase team</h3>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i>+91 98145-71695</p>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2"></i>starbroach98@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <a href="https://wa.me/919814571695" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp mr-2"></i>Chat on WhatsApp</a>
+            </div>
+
+            <div class="mt-12 w-full h-96">
+                <iframe class="w-full h-full rounded" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d218.7217903746571!2d75.92493673636451!3d30.871443945927997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1759391101644!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-lg font-bold mb-4">Star Engineering Tools</h3>
+                <p class="text-gray-400">Precision Engineering for a World in Motion.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Industries We Serve</h3>
+                <ul class="text-gray-400">
+                    <li class="mb-2">Automotive</li>
+                    <li class="mb-2">Aerospace</li>
+                    <li class="mb-2">Agriculture</li>
+                    <li class="mb-2">Heavy Machinery</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Contact</h3>
+                <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Back Side Of Gurudwara, Near Ganpati Chowk,Ludhiana, Punjab - 141010</p>
+                <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i>+91 98145 71695</p>
+                <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2"></i>sales@apexbroach.com</p>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-6 text-center text-gray-500 text-sm">
+            &copy; 2025 Star Engineering Tools. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
