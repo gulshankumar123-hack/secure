@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://starengineeringtools.com/sitemap.xml
